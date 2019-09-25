@@ -2,13 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-// import ClassCounterOne from './components/ClassCounterOne';
-import HookCounterOne from './components/HookCounterOne';
+// import ClassMouse from './components/ClassMouse';
+import HookMouse from './components/HookMouse';
 
 function App() {
   return (
     <div className="App">
-      <HookCounterOne />
+      {/* <ClassMouse /> */}
+      <HookMouse />
     </div>
   );
 }
