@@ -14,14 +14,17 @@ function HookMouse() {
   useEffect(() => {
     console.log('inside useEffect');
     window.addEventListener('mousemove', logMousePosition);
+    return () => {
+      console.log('inside useEffect cleanup');
+      window.removeEventListener('mousemove', logMousePosition);
+    }
   }, []);
 
 
   return (
     <div>
-      x: { x }
       <hr/>
-      y: { y }       
+      x: { x }, y: { y }       
     </div>
   );
 }
