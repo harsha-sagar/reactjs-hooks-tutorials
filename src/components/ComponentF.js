@@ -1,28 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component, useContext } from 'react';
 
-import { UserConsumer } from './UserContext';
-import { CompanyConsumer } from './CompanyContext';
+import UserContext from './UserContext';
+import CompanyContext from './CompanyContext';
 
-class ComponentC extends Component {
-  render() {
-    return (
-      <div>
-        <UserConsumer>
-          {
-            (user) => {
-              return <CompanyConsumer>
-                {
-                  (company) => {
-                    return <div>user context is { user }, company context is { company }</div>
-                  }  
-                }
-              </CompanyConsumer>
-            }
-          }
-        </UserConsumer>
-      </div>
-    )
-  }
+function ComponentF() {
+  const user = useContext(UserContext);
+  const company = useContext(CompanyContext);
+
+  return (
+    <div>
+      user: { user }, company: { company}
+    </div>
+  )
 }
 
-export default ComponentC;
+export default ComponentF;
