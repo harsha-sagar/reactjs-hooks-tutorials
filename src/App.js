@@ -2,16 +2,18 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-// import ClassTimer from './components/ClassTimer';
-import HookTimer from './components/HookTimer';
+// import DocTitleone from './components/DocTitleone';
+import DocTitleTwo from './components/DocTitleTwo';
 
 function App() {
   return (
     <div className="App">
       {
-        /* <ClassTimer /> */
+        /* 
+          <DocTitleOne />
+        */
       }
-      <HookTimer />
+      <DocTitleTwo />
     </div>
   );
 }
