@@ -2,18 +2,18 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-// import DocTitleone from './components/DocTitleone';
-import DocTitleTwo from './components/DocTitleTwo';
+import FormInput from './components/FormInput';
+import FormInputTwo from './components/FormInputTwo';
 
 function App() {
   return (
     <div className="App">
       {
-        /* 
-          <DocTitleOne />
+        /*
+          <FormInput />
         */
       }
-      <DocTitleTwo />
+      <FormInputTwo />
     </div>
   );
 }
