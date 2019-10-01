@@ -2,15 +2,15 @@ import React, { useContext } from 'react';
 
 import CountContext from './CountContext';
 
-function ComponentF() {
+function ComponentD() {
   const counterControl = useContext(CountContext);
 
   return (
     <div>
-      Component F
-      <button onClick={ () => counterControl.dispatch('reset') }>reset</button>
+      Component D
+      <button onClick={ () => counterControl.dispatch('decrement') }>Decrement by 1</button>
     </div>
   );
 }
 
-export default ComponentF;
+export default ComponentD;
