@@ -54,4 +54,7 @@ export default CounterTwo;
 2. What are the advantages of using state as object ?
   - Ability to track the status of independent entities. In this example count of 2 different counters
 
+Note:
+- State as object is recommended for managing the state of independent entities at global state, unlike in this example where state used as object for managing state of entities at local level.
+
 */
